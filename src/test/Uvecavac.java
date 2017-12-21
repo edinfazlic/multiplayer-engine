@@ -2,7 +2,7 @@ package test;
 
 import java.util.Scanner;
 
-public class TestCode {
+public class Uvecavac {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
@@ -10,13 +10,13 @@ public class TestCode {
 		while (true) {
 			String number = in.nextLine();
 			int i = Integer.valueOf(number);
-			i++;
+			i += 2;
 			try {
 				Thread.sleep(i * 1000);
 			} catch (InterruptedException e) {
 				System.err.println("No errors unless completely necessary. Seriously!");
 			}
-			System.out.println("Uvecavam za 1: " + i);
+			System.out.println("Uvecavam za 2: " + i);
 		}
 	}
 }
